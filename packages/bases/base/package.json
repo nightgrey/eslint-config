@@ -1,0 +1,19 @@
+{
+  "name": "@grey/eslint-config-base",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": "./index.js",
+  "packageManager": "npm@9.4.0",
+  "devDependencies": {
+    "@grey/eslint-config-utils": "^0.0.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@eslint/js": "^8.37.0"
+  },
+  "peerDependencies": {
+    "@grey/eslint-config-utils": "^0.0.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@eslint/js": "^8.37.0"
+  }
+}

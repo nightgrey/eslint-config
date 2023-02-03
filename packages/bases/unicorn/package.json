@@ -1,0 +1,13 @@
+{
+  "name": "@grey/eslint-config-base-unicorn",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": "./index.js",
+  "packageManager": "npm@9.4.0",
+  "devDependencies": {
+    "eslint-plugin-unicorn": "^46.0.0"
+  },
+  "peerDependencies": {
+    "eslint-plugin-unicorn": "^45.0.2"
+  }
+}

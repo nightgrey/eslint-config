@@ -1,0 +1,11 @@
+{
+  "name": "@grey/eslint-config-override-development-files",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": "./index.js",
+  "packageManager": "npm@9.4.0",
+  "devDependencies": {
+  },
+  "peerDependencies": {
+  }
+}

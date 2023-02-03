@@ -1,0 +1,14 @@
+{
+  "name": "@grey/eslint-config-addon-next",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": "./index.js",
+  "packageManager": "npm@9.4.0",
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^13.1.6"
+  },
+  "peerDependencies": {
+    "@next/eslint-plugin-next": "^13.1.6",
+    "next": "^13.1.6"
+  }
+}

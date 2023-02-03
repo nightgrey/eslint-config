@@ -1,0 +1,15 @@
+{
+  "name": "@grey/eslint-config-base-import",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": "./index.js",
+  "packageManager": "npm@9.4.0",
+  "devDependencies": {
+    "@grey/eslint-config-utils": "^0.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  },
+  "peerDependencies": {
+    "@grey/eslint-config-utils": "^0.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}
