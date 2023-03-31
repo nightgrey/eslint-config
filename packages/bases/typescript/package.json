@@ -5,17 +5,17 @@
     "directory": "packages/bases/typescript",
     "type": "git"
   },
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.0",
   "type": "module",
   "exports": "./index.js",
   "packageManager": "npm@9.4.0",
   "devDependencies": {
-    "@nightgrey/eslint-config-utils": "^0.0.0",
+    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "globals": "^13.20.0"
   },
   "peerDependencies": {
-    "@nightgrey/eslint-config-utils": "^0.0.0",
+    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.0",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "eslint-plugin-import": "^2.27.5",

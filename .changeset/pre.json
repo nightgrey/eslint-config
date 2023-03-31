@@ -18,5 +18,7 @@
     "@nightgrey/eslint-config-override-index-files": "0.0.0",
     "@nightgrey/eslint-config-utils": "0.0.0"
   },
-  "changesets": []
+  "changesets": [
+    "honest-houses-lay"
+  ]
 }
