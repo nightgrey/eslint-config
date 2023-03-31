@@ -1,17 +1,17 @@
 {
-  "name": "@grey/eslint-config-addon-jest",
+  "name": "@nightgrey/eslint-config-addon-jest",
   "version": "0.0.0",
   "type": "module",
   "exports": "./index.js",
   "packageManager": "npm@9.4.0",
   "devDependencies": {
-    "@grey/eslint-config-utils": "^0.0.0",
+    "@nightgrey/eslint-config-utils": "^0.0.0",
     "eslint-plugin-jest": "^27.2.1",
     "eslint-plugin-jest-dom": "^4.0.3",
     "globals": "^13.20.0"
   },
   "peerDependencies": {
-    "@grey/eslint-config-utils": "^0.0.0",
+    "@nightgrey/eslint-config-utils": "^0.0.0",
     "eslint-plugin-jest": "^27.2.1",
     "eslint-plugin-jest-dom": "^4.0.3",
     "globals": "^13.20.0",

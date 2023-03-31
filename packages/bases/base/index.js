@@ -1,4 +1,4 @@
-import { resolvePathArray } from '@grey/eslint-config-utils';
+import { resolvePathArray } from '@nightgrey/eslint-config-utils';
 import airbnbBase from 'eslint-config-airbnb-base';
 import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin';
 import js from '@eslint/js';

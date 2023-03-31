@@ -1,6 +1,6 @@
 import vitest from 'eslint-plugin-vitest';
 import globals from 'eslint-plugin-vitest-globals';
-import { JSX_AND_TSX } from '@grey/eslint-config-utils';
+import { JSX_AND_TSX } from '@nightgrey/eslint-config-utils';
 
 // Compatibility layer until https://github.com/jest-community/eslint-plugin-jest/pull/1245
 const vitestRules = {

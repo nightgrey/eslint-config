@@ -1,4 +1,4 @@
-import { JSX_AND_TSX, resolvePathArray } from '@grey/eslint-config-utils';
+import { JSX_AND_TSX, resolvePathArray } from '@nightgrey/eslint-config-utils';
 import typescriptEslintParser from '@typescript-eslint/parser';
 import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin';
 import airbnbTypescript from 'eslint-config-airbnb-typescript';

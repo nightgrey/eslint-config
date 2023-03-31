@@ -1,17 +1,17 @@
 {
-  "name": "@grey/eslint-config-addon-vitest",
+  "name": "@nightgrey/eslint-config-addon-vitest",
   "version": "0.0.0",
   "type": "module",
   "exports": "./index.js",
   "packageManager": "npm@9.4.0",
   "devDependencies": {
-    "@grey/eslint-config-utils": "^0.0.0",
+    "@nightgrey/eslint-config-utils": "^0.0.0",
     "eslint-plugin-vitest": "^0.0.57",
     "eslint-plugin-vitest-globals": "^1.3.1",
     "globals": "^13.20.0"
   },
   "peerDependencies": {
-    "@grey/eslint-config-utils": "^0.0.0",
+    "@nightgrey/eslint-config-utils": "^0.0.0",
     "eslint-plugin-vitest": "^0.0.54",
     "eslint-plugin-vitest-globals": "^1.3.1",
     "globals": "^13.20.0",

@@ -10,7 +10,7 @@
 [![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-# eslint-config [ALPHA]
+# @nightgrey/eslint-config [ALPHA]
 
 **This configuration is still in alpha and currently being tested.**
 
@@ -18,7 +18,7 @@ This package provides grey's ESLint configuration. It provides opinionated defau
 
 If you want to use this configuration or even just parts of it as a base for your own configuration, the configuration is modular, and you can install just parts of it to construct your own configuration, too.
 
-> Attention: This configuration is written in ESLint's new, but still experimental [flat configuration style](https://eslint.org/docs/latest/use/configure/configuration-files-new). You can read more about it in the [ESLint documentation](https://eslint.org/docs/latest/use/configure/configuration-files-new).
+> Attention: This configuration is written in ESLint's [flat configuration style](https://eslint.org/docs/latest/use/configure/configuration-files-new). You can read more about it in the [ESLint documentation](https://eslint.org/docs/latest/use/configure/configuration-files-new).
 
 ## Features
 
@@ -73,13 +73,13 @@ If you want to use this configuration or even just parts of it as a base for you
 ### Getting started
 
 ```sh
-npm install --save-dev @grey/eslint-config
+npm install --save-dev @nightgrey/eslint-config
 ```
 
 **eslint.config.js**
 
 ```js
-import greyEslintConfig from '@grey/eslint-config';
+import nightgreyEslintConfig from '@nightgrey/eslint-config';
 import globals from 'globals';
 
 /** @type {import('eslint').Linter.FlatConfig} */
@@ -102,10 +102,10 @@ const configuration = {
   },
 };
 
-// Then, make sure to export the configuration array and to spread `greyEslintConfig` first!
+// Then, make sure to export the configuration array and to spread `nightgreyEslintConfig` first!
 
 /** @type {Array<import('eslint').Linter.FlatConfig>} */
-export default [...greyEslintConfig, configuration];
+export default [...nightgreyEslintConfig, configuration];
 ```
 
 ### Usage
@@ -117,15 +117,15 @@ This is a configuration with all addons and overrides installed.
 **eslint.config.js**
 
 ```js
-import eslintConfigGrey from '@grey/eslint-config';
-import { prettierAddon } from '@grey/eslint-config-addon-prettier';
-import { reactAddon } from '@grey/eslint-config-addon-react';
-import { nextAddon } from '@grey/eslint-config-addon-next';
-import { jestAddon } from '@grey/eslint-config-addon-jest';
-import { vitestAddon } from '@grey/eslint-config-addon-vitest';
-import { developmentFilesOverrides } from '@grey/eslint-config-override-development-files';
-import { indexFilesOverrides } from '@grey/eslint-config-override-index-files';
-import { testingLibraryReactAddon } from '@grey/eslint-config-addon-testing-library-react';
+import eslintConfigGrey from '@nightgrey/eslint-config';
+import { prettierAddon } from '@nightgrey/eslint-config-addon-prettier';
+import { reactAddon } from '@nightgrey/eslint-config-addon-react';
+import { nextAddon } from '@nightgrey/eslint-config-addon-next';
+import { jestAddon } from '@nightgrey/eslint-config-addon-jest';
+import { vitestAddon } from '@nightgrey/eslint-config-addon-vitest';
+import { developmentFilesOverrides } from '@nightgrey/eslint-config-override-development-files';
+import { indexFilesOverrides } from '@nightgrey/eslint-config-override-index-files';
+import { testingLibraryReactAddon } from '@nightgrey/eslint-config-addon-testing-library-react';
 import globals from 'globals';
 
 

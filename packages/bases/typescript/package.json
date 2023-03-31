@@ -1,16 +1,16 @@
 {
-  "name": "@grey/eslint-config-base-typescript",
+  "name": "@nightgrey/eslint-config-base-typescript",
   "version": "0.0.0",
   "type": "module",
   "exports": "./index.js",
   "packageManager": "npm@9.4.0",
   "devDependencies": {
-    "@grey/eslint-config-utils": "^0.0.0",
+    "@nightgrey/eslint-config-utils": "^0.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "globals": "^13.20.0"
   },
   "peerDependencies": {
-    "@grey/eslint-config-utils": "^0.0.0",
+    "@nightgrey/eslint-config-utils": "^0.0.0",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "eslint-plugin-import": "^2.27.5",

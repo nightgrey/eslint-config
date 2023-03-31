@@ -1,9 +1,9 @@
-import { base, unicornBase, importBase } from '@grey/eslint-config-grey';
-import { prettierAddon } from '@grey/eslint-config-addon-prettier';
-import { jsdocAddon } from '@grey/eslint-config-addon-jsdoc';
+import { base, unicornBase, importBase } from '@nightgrey/eslint-config-grey';
+import { prettierAddon } from '@nightgrey/eslint-config-addon-prettier';
+import { jsdocAddon } from '@nightgrey/eslint-config-addon-jsdoc';
 import globals from 'globals';
-import { indexFilesOverrides } from '@grey/eslint-config-override-index-files';
-import { developmentFilesOverrides } from '@grey/eslint-config-override-development-files';
+import { indexFilesOverrides } from '@nightgrey/eslint-config-override-index-files';
+import { developmentFilesOverrides } from '@nightgrey/eslint-config-override-development-files';
 
 /** @type {Array<import('eslint').Linter.FlatConfig>} */
 const config = [

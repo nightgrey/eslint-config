@@ -1,5 +1,5 @@
 {
-  "name": "@grey/eslint-config",
+  "name": "@nightgrey/eslint-config",
   "version": "0.0.0",
   "type": "module",
   "exports": {
@@ -10,17 +10,17 @@
   "packageManager": "npm@9.4.0",
   "peerDependencies": {
     "eslint": "^8.34.0",
-    "@grey/eslint-config-base": "^0.0.0",
-    "@grey/eslint-config-base-typescript": "^0.0.0",
-    "@grey/eslint-config-base-import": "^0.0.0",
-    "@grey/eslint-config-base-unicorn": "^0.0.0"
+    "@nightgrey/eslint-config-base": "^0.0.0",
+    "@nightgrey/eslint-config-base-typescript": "^0.0.0",
+    "@nightgrey/eslint-config-base-import": "^0.0.0",
+    "@nightgrey/eslint-config-base-unicorn": "^0.0.0"
   },
   "devDependencies": {
     "eslint": "^8.34.0",
-    "@grey/eslint-config-base": "^0.0.0",
-    "@grey/eslint-config-base-typescript": "^0.0.0",
-    "@grey/eslint-config-base-import": "^0.0.0",
-    "@grey/eslint-config-base-unicorn": "^0.0.0"
+    "@nightgrey/eslint-config-base": "^0.0.0",
+    "@nightgrey/eslint-config-base-typescript": "^0.0.0",
+    "@nightgrey/eslint-config-base-import": "^0.0.0",
+    "@nightgrey/eslint-config-base-unicorn": "^0.0.0"
   },
   "dependencies": {}
 }

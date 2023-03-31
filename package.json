@@ -1,10 +1,11 @@
 {
-  "name": "@grey/eslint-config",
+  "name": "@nightgrey/eslint-config",
   "private": true,
   "type": "module",
   "scripts": {
     "test": "npm run test:lint",
-    "test:lint": "eslint packages"
+    "test:lint": "eslint packages",
+    "release": "changeset publish"
   },
   "engines": {
     "npm": ">= 9",
@@ -19,7 +20,7 @@
   ],
   "packageManager": "npm@9.4.0",
   "devDependencies": {
-    "@grey/eslint-config": "*",
+    "@nightgrey/eslint-config": "*",
     "@tsconfig/node18-strictest-esm": "^1.0.1",
     "@types/eslint": "^8.37.0",
     "globals": "^13.20.0"

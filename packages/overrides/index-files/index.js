@@ -1,4 +1,4 @@
-import { ALL } from '@grey/eslint-config-utils';
+import { ALL } from '@nightgrey/eslint-config-utils';
 
 /**
  * Overrides for index.* files, usually configuration files in the root directory.

@@ -1,5 +1,5 @@
 {
-  "name": "@grey/eslint-config-base-unicorn",
+  "name": "@nightgrey/eslint-config-base-unicorn",
   "version": "0.0.0",
   "type": "module",
   "exports": "./index.js",

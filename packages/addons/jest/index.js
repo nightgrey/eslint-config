@@ -1,6 +1,6 @@
 import jest from 'eslint-plugin-jest';
 import jestDom from 'eslint-plugin-jest-dom';
-import { JSX_AND_TSX } from '@grey/eslint-config-utils';
+import { JSX_AND_TSX } from '@nightgrey/eslint-config-utils';
 import globals from 'globals';
 
 // Compatibility layer until https://github.com/jest-community/eslint-plugin-jest/pull/1245
