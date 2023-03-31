@@ -5,19 +5,19 @@
     "directory": "packages/addons/react",
     "type": "git"
   },
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.0",
   "type": "module",
   "exports": "./index.js",
   "packageManager": "npm@9.4.0",
   "devDependencies": {
-    "@nightgrey/eslint-config-utils": "^0.0.0",
+    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "globals": "^13.20.0"
   },
   "peerDependencies": {
-    "@nightgrey/eslint-config-utils": "^0.0.0",
+    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",

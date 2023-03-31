@@ -5,18 +5,18 @@
     "directory": "packages/bases/base",
     "type": "git"
   },
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.0",
   "type": "module",
   "exports": "./index.js",
   "packageManager": "npm@9.4.0",
   "devDependencies": {
-    "@nightgrey/eslint-config-utils": "^0.0.0",
+    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
     "@eslint/js": "^8.37.0"
   },
   "peerDependencies": {
-    "@nightgrey/eslint-config-utils": "^0.0.0",
+    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
     "@eslint/js": "^8.37.0"

@@ -5,14 +5,14 @@
     "directory": "packages/overrides/index-files",
     "type": "git"
   },
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.0",
   "type": "module",
   "exports": "./index.js",
   "packageManager": "npm@9.4.0",
   "devDependencies": {
-    "@nightgrey/eslint-config-utils": "^0.0.0"
+    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.0"
   },
   "peerDependencies": {
-    "@nightgrey/eslint-config-utils": "^0.0.0"
+    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.0"
   }
 }
