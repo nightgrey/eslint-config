@@ -64,7 +64,6 @@ If you want to use this configuration or even just parts of it as a base for you
 
 - [Getting started](#getting-started)
 - [Usage](#usage)
-- [Addons](#addons)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
@@ -160,6 +159,12 @@ export default [
   prettierAddon,
 ];
 ```
+
+## Roadmap
+
+* [ ] Add better tests
+* [ ] Add documentation for each package
+* [ ] Add presets
 
 ## Contributing
 
