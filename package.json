@@ -1,5 +1,9 @@
 {
   "name": "@nightgrey/eslint-config",
+  "repository": {
+    "url": "https://github.com/nightgrey/eslint-config",
+    "type": "git"
+  },
   "private": true,
   "type": "module",
   "scripts": {

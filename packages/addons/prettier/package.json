@@ -1,5 +1,10 @@
 {
   "name": "@nightgrey/eslint-config-addon-prettier",
+  "repository": {
+    "url": "https://github.com/nightgrey/eslint-config",
+    "directory": "packages/addons/prettier",
+    "type": "git"
+  },
   "version": "0.0.0",
   "type": "module",
   "exports": "./index.js",

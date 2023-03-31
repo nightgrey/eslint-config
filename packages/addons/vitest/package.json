@@ -1,5 +1,10 @@
 {
   "name": "@nightgrey/eslint-config-addon-vitest",
+  "repository": {
+    "url": "https://github.com/nightgrey/eslint-config",
+    "directory": "packages/addons/vitest",
+    "type": "git"
+  },
   "version": "0.0.0",
   "type": "module",
   "exports": "./index.js",

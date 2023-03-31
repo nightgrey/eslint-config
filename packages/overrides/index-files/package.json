@@ -1,5 +1,10 @@
 {
   "name": "@nightgrey/eslint-config-override-index-files",
+  "repository": {
+    "url": "https://github.com/nightgrey/eslint-config",
+    "directory": "packages/overrides/index-files",
+    "type": "git"
+  },
   "version": "0.0.0",
   "type": "module",
   "exports": "./index.js",
