@@ -1,5 +1,12 @@
 {
   "name": "@nightgrey/eslint-config",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslint-config-nightgrey",
+    "typescript"
+  ],
   "repository": {
     "url": "https://github.com/nightgrey/eslint-config",
     "directory": "packages/config",

@@ -9,13 +9,16 @@
   "scripts": {
     "test": "npm run test:lint",
     "test:lint": "eslint packages",
-    "release": "changeset publish"
+    "release": "changeset publish",
+    "changeset": "changeset",
+    "pkgJsons": "tsx scripts/maintain.ts"
   },
   "engines": {
     "npm": ">= 9",
     "node": ">= 18"
   },
   "workspaces": [
+    "scripts",
     "packages/config",
     "packages/utils",
     "packages/addons/*",
