@@ -1,6 +1,5 @@
 {
   "private": true,
-  "type": "module",
   "version": "0.0.0",
   "devDependencies": {
     "@types/micromatch": "^4.0.2",
@@ -12,6 +11,7 @@
     "type-fest": "^3.7.2"
   },
   "name": "@nightgrey/eslint-config-scripts",
+  "type": "commonjs",
   "engines": {
     "npm": ">= 9",
     "node": ">= 18"

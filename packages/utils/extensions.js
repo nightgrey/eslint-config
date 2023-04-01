@@ -1,11 +1,17 @@
-export const JS = ['js', 'mjs', 'cjs'];
+const JS = ['js', 'mjs', 'cjs'];
+const JSX = [...JS, 'jsx'];
+const TS = [...JS, 'ts', 'd.ts', 'mts', 'd.mts', 'cts', 'd.cts'];
+const TSX = [...TS, 'tsx'];
+const JS_AND_TS = [...JS, ...TS];
+const JSX_AND_TSX = [...JSX, ...TSX];
+const ALL = JSX_AND_TSX;
 
-export const JSX = [...JS, 'jsx'];
-
-export const TS = ['ts', 'd.ts', 'mts', 'd.mts', 'cts', 'd.cts'];
-
-export const TSX = [...TS, 'tsx'];
-
-export const JS_AND_TS = [...JS, ...TS];
-export const JSX_AND_TSX = [...JSX, ...TSX];
-export const ALL = JSX_AND_TSX;
+module.exports = {
+  JS,
+  JSX,
+  TS,
+  TSX,
+  JS_AND_TS,
+  JSX_AND_TSX,
+  ALL,
+};

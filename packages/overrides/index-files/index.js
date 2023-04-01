@@ -1,11 +1,11 @@
-import { ALL } from '@nightgrey/eslint-config-utils';
+const { ALL } = require('@nightgrey/eslint-config-utils');
 
 /**
  * Overrides for index.* files, usually configuration files in the root directory.
  *
  * @type {import('eslint').Linter.FlatConfig}
  */
-export const indexFilesOverrides = {
+module.exports.indexFilesOverrides = {
   files: ALL.map((extension) => `**/index.${extension}`),
   rules: {
     // Only warn about default exports. It's often necessary for packages or

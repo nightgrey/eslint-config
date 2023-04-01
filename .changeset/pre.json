@@ -19,9 +19,5 @@
     "@nightgrey/eslint-config-utils": "0.0.0",
     "@nightgrey/eslint-config-scripts": "0.0.0"
   },
-  "changesets": [
-    "eleven-monkeys-grin",
-    "forty-rats-film",
-    "honest-houses-lay"
-  ]
+  "changesets": ["eleven-monkeys-grin", "forty-rats-film", "honest-houses-lay"]
 }

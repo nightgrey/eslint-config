@@ -76,6 +76,7 @@ const update = (previous: PackageJson, _path: string) => {
 
   const COMMON = {
     name,
+    type: 'commonjs',
     engines: { npm: '>= 9', node: '>= 18' },
     keywords: [
       'eslint',

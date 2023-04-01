@@ -1,10 +1,10 @@
 {
   "version": "1.0.0-alpha.1",
-  "type": "module",
   "exports": "./index.js",
   "devDependencies": {},
   "peerDependencies": {},
   "name": "@nightgrey/eslint-config-override-development-files",
+  "type": "commonjs",
   "engines": {
     "npm": ">= 9",
     "node": ">= 18"

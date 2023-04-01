@@ -1,7 +1,7 @@
-import jest from 'eslint-plugin-jest';
-import jestDom from 'eslint-plugin-jest-dom';
-import { JSX_AND_TSX } from '@nightgrey/eslint-config-utils';
-import globals from 'globals';
+const jest = require('eslint-plugin-jest');
+const jestDom = require('eslint-plugin-jest-dom');
+const { JSX_AND_TSX } = require('@nightgrey/eslint-config-utils');
+const globals = require('globals');
 
 // Compatibility layer until https://github.com/jest-community/eslint-plugin-jest/pull/1245
 const jestRules = {
@@ -11,7 +11,7 @@ const jestRules = {
 };
 
 /** @type {import('eslint').Linter.FlatConfig} */
-export const jestAddon = {
+module.exports.jestAddon = {
   files: JSX_AND_TSX.map((extension) => `**/*.test.${extension}`),
   plugins: {
     jest,

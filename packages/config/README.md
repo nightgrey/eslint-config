@@ -66,18 +66,18 @@ npm install --save-dev @nightgrey/eslint-config
 **eslint.config.js**
 
 ```js
-import nightgreyEslintConfig from '@nightgrey/eslint-config';
-import globals from 'globals';
+const nightgreyEslintConfig = require('@nightgrey/eslint-config');
+const globals = require('globals');
 
 /** @type {import('eslint').Linter.FlatConfig} */
 const configuration = {
   // Your own configuration goes here, after the base configuration.
 
   // Important: You have to set your own language options depending on your project.
-  // This code here assumes an ESM Node.js project with ES2021 globals and TypeScript.
+  // This code here assumes a CommonJS  project with ES2021 globals and TypeScript.
   // For more information, see https://eslint.org/docs/user-guide/configuring/language-options
   languageOptions: {
-    sourceType: 'module',
+    sourceType: 'commonjs',
     parserOptions: {
       ecmaVersion: 'latest',
       project: './tsconfig.json',
@@ -92,7 +92,7 @@ const configuration = {
 // Then, make sure to export the configuration array and to spread `nightgreyEslintConfig` first!
 
 /** @type {Array<import('eslint').Linter.FlatConfig>} */
-export default [...nightgreyEslintConfig, configuration];
+module.exports = [...nightgreyEslintConfig, configuration];
 ```
 
 ### Usage
@@ -104,16 +104,22 @@ This is a configuration with all addons and overrides installed.
 **eslint.config.js**
 
 ```js
-import eslintConfigGrey from '@nightgrey/eslint-config';
-import { prettierAddon } from '@nightgrey/eslint-config-addon-prettier';
-import { reactAddon } from '@nightgrey/eslint-config-addon-react';
-import { nextAddon } from '@nightgrey/eslint-config-addon-next';
-import { jestAddon } from '@nightgrey/eslint-config-addon-jest';
-import { vitestAddon } from '@nightgrey/eslint-config-addon-vitest';
-import { developmentFilesOverrides } from '@nightgrey/eslint-config-override-development-files';
-import { indexFilesOverrides } from '@nightgrey/eslint-config-override-index-files';
-import { testingLibraryReactAddon } from '@nightgrey/eslint-config-addon-testing-library-react';
-import globals from 'globals';
+const eslintConfigGreys = require('@nightgrey/eslint-config');
+const { prettierAddon } = require('@nightgrey/eslint-config-addon-prettier');
+const { reactAddon } = require('@nightgrey/eslint-config-addon-react');
+const { nextAddon } = require('@nightgrey/eslint-config-addon-next');
+const { jestAddon } = require('@nightgrey/eslint-config-addon-jest');
+const { vitestAddon } = require('@nightgrey/eslint-config-addon-vitest');
+const {
+  developmentFilesOverrides,
+} = require('@nightgrey/eslint-config-override-development-files');
+const {
+  indexFilesOverrides,
+} = require('@nightgrey/eslint-config-override-index-files');
+const {
+  testingLibraryReactAddon,
+} = require('@nightgrey/eslint-config-addon-testing-library-react');
+const globals = require('globals');
 
 /** @type {import('eslint').Linter.FlatConfig} */
 const configuration = {
@@ -129,7 +135,7 @@ const configuration = {
 // Always last: Prettier addon
 
 /** @type {Array<import('eslint').Linter.FlatConfig>} */
-export default [
+module.exports = [
   // Bases
   ...eslintConfigGrey,
   // Addons

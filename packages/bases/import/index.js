@@ -1,4 +1,4 @@
-import eslintImport from 'eslint-plugin-import';
+const eslintImport = require('eslint-plugin-import');
 
 // Compatibility layer until flat configuration support
 /** @type {import('eslint').Linter.FlatConfig['rules']} */
@@ -11,7 +11,7 @@ const importPluginRules = {
  *
  * @type {import('eslint').Linter.FlatConfig}
  */
-export const importBase = {
+module.exports.importBase = {
   plugins: {
     import: eslintImport,
   },

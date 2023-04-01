@@ -1,8 +1,8 @@
-import react from 'eslint-plugin-react';
-import reactHooks from 'eslint-plugin-react-hooks';
-import jsxA11y from 'eslint-plugin-jsx-a11y';
-import globals from 'globals';
-import { reactRules } from './rules.js';
+const react = require('eslint-plugin-react');
+const reactHooks = require('eslint-plugin-react-hooks');
+const jsxA11y = require('eslint-plugin-jsx-a11y');
+const globals = require('globals');
+const { reactRules } = require('./rules.js');
 
 // Compatibility layer until flat configuration support
 /** @type {import('eslint').Linter.FlatConfig['rules']} */
@@ -13,7 +13,7 @@ const reactPluginRules = {
   ...jsxA11y.configs.recommended.rules,
 };
 
-export const dependencies = [
+module.exports.dependencies = [
   'react',
   'react-dom',
   'eslint-plugin-react',
@@ -22,7 +22,7 @@ export const dependencies = [
 ];
 
 /** @type {import('eslint').Linter.FlatConfig} */
-export const reactAddon = {
+module.exports.reactAddon = {
   languageOptions: {
     parserOptions: {
       ...react.configs.recommended.parserOptions,

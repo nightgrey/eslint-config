@@ -1,19 +1,19 @@
-import testingLibrary from 'eslint-plugin-testing-library';
-import { JSX_AND_TSX } from '@nightgrey/eslint-config-utils';
-import globals from 'globals';
+const testingLibrary = require('eslint-plugin-testing-library');
+const { JSX_AND_TSX } = require('@nightgrey/eslint-config-utils');
+const globals = require('globals');
 
 // Compatibility layer until https://github.com/jest-community/eslint-plugin-jest/pull/1245
 const testingLibraryRules = {
   rules: testingLibrary.configs.react.rules,
 };
 
-export const dependencies = [
+module.exports.dependencies = [
   '@testing-library/react',
   'eslint-plugin-testing-library',
 ];
 
 /** @type {import('eslint').Linter.FlatConfig} */
-export const testingLibraryReactAddon = {
+module.exports.testingLibraryReactAddon = {
   files: JSX_AND_TSX.map((extension) => `**/*.test.${extension}`),
   languageOptions: {
     globals: {

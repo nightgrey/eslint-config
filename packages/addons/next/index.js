@@ -1,4 +1,4 @@
-import next from '@next/eslint-plugin-next';
+const next = require('@next/eslint-plugin-next');
 
 // Compatibility layer until flat configuration support
 const nextRules = {
@@ -6,7 +6,7 @@ const nextRules = {
 };
 
 /** @type {import('eslint').Linter.FlatConfig} */
-export const nextAddon = {
+module.exports.nextAddon = {
   plugins: {
     '@next/next': next,
   },

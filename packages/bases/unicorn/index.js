@@ -1,4 +1,4 @@
-import unicorn from 'eslint-plugin-unicorn';
+const unicorn = require('eslint-plugin-unicorn');
 
 // Compatibility layer until flat configuration support
 const unicornPluginRules = {
@@ -10,7 +10,7 @@ const unicornPluginRules = {
  *
  * @type {import('eslint').Linter.FlatConfig}
  */
-export const unicornBase = {
+module.exports.unicornBase = {
   plugins: {
     unicorn,
   },

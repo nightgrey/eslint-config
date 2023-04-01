@@ -1,17 +1,17 @@
-import { resolvePathArray } from '@nightgrey/eslint-config-utils';
-import airbnbBase from 'eslint-config-airbnb-base';
-import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin';
-import js from '@eslint/js';
+const { resolvePathArray } = require('@nightgrey/eslint-config-utils');
+const airbnbBase = require('eslint-config-airbnb-base');
+const typescriptEslintPlugin = require('@typescript-eslint/eslint-plugin');
+const js = require('@eslint/js');
 
 // Compatibility layer until flat configuration support
-const airbnbBaseRules = await resolvePathArray(airbnbBase.extends);
+const airbnbBaseRules = resolvePathArray(airbnbBase.extends);
 
 /**
  * Base configuration
  *
  * @type {import('eslint').Linter.FlatConfig}
  */
-export const base = {
+module.exports.base = {
   rules: {
     ...js.configs.recommended.rules,
     ...airbnbBaseRules,

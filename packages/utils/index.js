@@ -1,3 +1,9 @@
-export * from './log.js';
-export * from './resolvePathArray.js';
-export * from './extensions.js';
+const log = require('./log.js');
+const resolvePathArray = require('./resolvePathArray.js');
+const extensions = require('./extensions.js');
+
+module.exports = {
+  ...log,
+  ...resolvePathArray,
+  ...extensions,
+};

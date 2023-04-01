@@ -6,7 +6,7 @@
  * @param message The message to log
  * @param {'info'|'warn'|'error'|'log'} level The level to log at.
  */
-export const log = (message, level = 'log') => {
+module.exports.log = (message, level = 'log') => {
   if (
     process.env.NODE_ENV === 'development' ||
     process.env.ESLINT_CONFIG_GREY_VERBOSE === 'true'

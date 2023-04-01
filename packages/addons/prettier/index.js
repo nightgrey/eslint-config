@@ -1,2 +1,4 @@
+const eslintConfigPrettier = require('eslint-config-prettier');
+
 /** @type {import('eslint').Linter.FlatConfig} */
-export { default as prettierAddon } from 'eslint-config-prettier';
+module.exports.prettierAddon = eslintConfigPrettier;

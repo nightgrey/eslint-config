@@ -1,6 +1,5 @@
 {
   "version": "1.0.0-alpha.1",
-  "type": "module",
   "exports": "./index.js",
   "devDependencies": {
     "@nightgrey/eslint-config-utils": "^1.0.0-alpha.1",
@@ -14,6 +13,7 @@
     "globals": "^13.20.0"
   },
   "name": "@nightgrey/eslint-config-addon-testing-library-react",
+  "type": "commonjs",
   "engines": {
     "npm": ">= 9",
     "node": ">= 18"

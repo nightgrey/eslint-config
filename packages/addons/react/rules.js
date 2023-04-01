@@ -1,5 +1,5 @@
 /** @type {import('eslint').Linter.FlatConfig['rules']} */
-export const reactRules = {
+module.exports.reactRules = {
   // Enforce state initialization style in a class component
   // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/state-in-constructor.md
   'react/state-in-constructor': ['error', 'never'],

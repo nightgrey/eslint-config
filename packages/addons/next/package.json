@@ -1,6 +1,5 @@
 {
   "version": "1.0.0-alpha.1",
-  "type": "module",
   "exports": "./index.js",
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.1.6"
@@ -10,6 +9,7 @@
     "next": "^13.1.6"
   },
   "name": "@nightgrey/eslint-config-addon-next",
+  "type": "commonjs",
   "engines": {
     "npm": ">= 9",
     "node": ">= 18"

@@ -1,4 +1,4 @@
-import jsdoc from 'eslint-plugin-jsdoc';
+const jsdoc = require('eslint-plugin-jsdoc');
 
 // Compatibility layer until flat configuration support
 const jsdocRules = {
@@ -6,7 +6,7 @@ const jsdocRules = {
 };
 
 /** @type {import('eslint').Linter.FlatConfig} */
-export const jsdocAddon = {
+module.exports.jsdocAddon = {
   plugins: {
     jsdoc,
   },

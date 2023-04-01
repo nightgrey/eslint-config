@@ -1,9 +1,13 @@
-import { base, unicornBase, importBase } from '@nightgrey/eslint-config';
-import { prettierAddon } from '@nightgrey/eslint-config-addon-prettier';
-import { jsdocAddon } from '@nightgrey/eslint-config-addon-jsdoc';
-import globals from 'globals';
-import { indexFilesOverrides } from '@nightgrey/eslint-config-override-index-files';
-import { developmentFilesOverrides } from '@nightgrey/eslint-config-override-development-files';
+const { base, unicornBase, importBase } = require('@nightgrey/eslint-config');
+const { prettierAddon } = require('@nightgrey/eslint-config-addon-prettier');
+const { jsdocAddon } = require('@nightgrey/eslint-config-addon-jsdoc');
+const globals = require('globals');
+const {
+  indexFilesOverrides,
+} = require('@nightgrey/eslint-config-override-index-files');
+const {
+  developmentFilesOverrides,
+} = require('@nightgrey/eslint-config-override-development-files');
 
 /** @type {Array<import('eslint').Linter.FlatConfig>} */
 const config = [
@@ -13,6 +17,7 @@ const config = [
   jsdocAddon,
   {
     languageOptions: {
+      sourceType: 'commonjs',
       parserOptions: {
         ecmaVersion: 'latest',
         project: './tsconfig.json',
@@ -23,6 +28,7 @@ const config = [
       },
     },
     rules: {
+      'unicorn/prefer-module': 'off',
       'multiline-comment-style': ['warn', 'separate-lines'],
       'import/no-extraneous-dependencies': [
         'error',
@@ -45,4 +51,4 @@ const config = [
   developmentFilesOverrides,
 ];
 
-export default config;
+module.exports = config;

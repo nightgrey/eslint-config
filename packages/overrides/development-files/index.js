@@ -4,7 +4,7 @@
  *
  * @type {import('eslint').Linter.FlatConfig}
  */
-export const developmentFilesOverrides = {
+module.exports.developmentFilesOverrides = {
   files: ['*'],
   rules: {
     // Allow console usage

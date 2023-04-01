@@ -86,10 +86,9 @@ const configuration = {
   // Your own configuration goes here, after the base configuration.
 
   // Important: You have to set your own language options depending on your project.
-  // This code here assumes an ESM Node.js project with ES2021 globals and TypeScript.
+  // This code here assumes a Node.js project with ES2021 globals and TypeScript.
   // For more information, see https://eslint.org/docs/user-guide/configuring/language-options
   languageOptions: {
-    sourceType: 'module',
     parserOptions: {
       ecmaVersion: 'latest',
       project: './tsconfig.json',

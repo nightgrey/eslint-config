@@ -1,16 +1,16 @@
-import vitest from 'eslint-plugin-vitest';
-import globals from 'eslint-plugin-vitest-globals';
-import { JSX_AND_TSX } from '@nightgrey/eslint-config-utils';
+const vitest = require('eslint-plugin-vitest');
+const globals = require('eslint-plugin-vitest-globals');
+const { JSX_AND_TSX } = require('@nightgrey/eslint-config-utils');
 
 // Compatibility layer until https://github.com/jest-community/eslint-plugin-jest/pull/1245
 const vitestRules = {
   rules: vitest.configs.recommended.rules,
 };
 
-export const dependencies = ['vitest'];
+module.exports.dependencies = ['vitest'];
 
 /** @type {import('eslint').Linter.FlatConfig} */
-export const vitestAddon = {
+module.exports.vitestAddon = {
   files: JSX_AND_TSX.map((extension) => `**/*.test.${extension}`),
   languageOptions: {
     globals: {

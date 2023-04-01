@@ -1,9 +1,12 @@
-import { JSX_AND_TSX, resolvePathArray } from '@nightgrey/eslint-config-utils';
-import typescriptEslintParser from '@typescript-eslint/parser';
-import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin';
-import airbnbTypescript from 'eslint-config-airbnb-typescript';
+const {
+  JSX_AND_TSX,
+  resolvePathArray,
+} = require('@nightgrey/eslint-config-utils');
+const typescriptEslintParser = require('@typescript-eslint/parser');
+const typescriptEslintPlugin = require('@typescript-eslint/eslint-plugin');
+const airbnbTypescript = require('eslint-config-airbnb-typescript');
 
-const airbnbTypescriptRules = await resolvePathArray(airbnbTypescript.extends);
+const airbnbTypescriptRules = resolvePathArray(airbnbTypescript.extends);
 
 const typescriptEslintPluginRules = {
   // eslint-disable-next-line import/no-named-as-default-member -- CJS
@@ -18,7 +21,7 @@ const typescriptEslintPluginRules = {
  *
  * @type {import('eslint').Linter.FlatConfig}
  */
-export const typescriptBase = {
+module.exports.typescriptBase = {
   languageOptions: {
     parser: typescriptEslintParser,
     // Compatibility layer until flat configuration support

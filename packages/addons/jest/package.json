@@ -1,6 +1,5 @@
 {
   "version": "1.0.0-alpha.1",
-  "type": "module",
   "exports": "./index.js",
   "devDependencies": {
     "@nightgrey/eslint-config-utils": "^1.0.0-alpha.1",
@@ -16,6 +15,7 @@
     "jest": "^29.2.1"
   },
   "name": "@nightgrey/eslint-config-addon-jest",
+  "type": "commonjs",
   "engines": {
     "npm": ">= 9",
     "node": ">= 18"

@@ -1,6 +1,5 @@
 {
   "version": "1.0.0-alpha.1",
-  "type": "module",
   "exports": "./index.js",
   "devDependencies": {
     "eslint-plugin-unicorn": "^46.0.0"
@@ -9,6 +8,7 @@
     "eslint-plugin-unicorn": "^45.0.2"
   },
   "name": "@nightgrey/eslint-config-base-unicorn",
+  "type": "commonjs",
   "engines": {
     "npm": ">= 9",
     "node": ">= 18"

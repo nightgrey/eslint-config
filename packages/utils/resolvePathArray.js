@@ -5,14 +5,11 @@
  * eslint-config-airbnb-typescript.
  *
  * @param array {string[]} Array of paths to resolve
- * @returns {Promise<import('eslint').Linter.FlatConfig['rules']>} Resolved rules
+ * @returns {import('eslint').Linter.FlatConfig['rules']} Resolved rules
  */
-export const resolvePathArray = async (array) => {
-  const resolved = await Promise.all(
-    array.map(async (path) => {
-      const module = await import(path);
-      return module.default;
-    })
+module.exports.resolvePathArray = (array) => {
+  const resolved = array.map(
+    async (path) => require(path).default || require(path)
   );
 
   return Object.assign({}, ...resolved.map((config) => config.rules));
