@@ -1,12 +1,12 @@
 {
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "type": "module",
   "exports": "./index.js",
   "devDependencies": {
-    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.0"
+    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.1"
   },
   "peerDependencies": {
-    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.0"
+    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.1"
   },
   "name": "@nightgrey/eslint-config-override-index-files",
   "engines": {

@@ -16,7 +16,12 @@
     "@nightgrey/eslint-config": "0.0.0",
     "@nightgrey/eslint-config-override-development-files": "0.0.0",
     "@nightgrey/eslint-config-override-index-files": "0.0.0",
-    "@nightgrey/eslint-config-utils": "0.0.0"
+    "@nightgrey/eslint-config-utils": "0.0.0",
+    "@nightgrey/eslint-config-scripts": "0.0.0"
   },
-  "changesets": ["honest-houses-lay"]
+  "changesets": [
+    "eleven-monkeys-grin",
+    "forty-rats-film",
+    "honest-houses-lay"
+  ]
 }

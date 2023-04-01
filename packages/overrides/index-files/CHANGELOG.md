@@ -1,5 +1,17 @@
 # @nightgrey/eslint-config-override-index-files
 
+## 1.0.0-alpha.1
+
+### Patch Changes
+
+- [`6a4c9ec`](https://github.com/nightgrey/eslint-config/commit/6a4c9ec10ea84a6cb54132789fbb25fe17500631) Thanks [@nightgrey](https://github.com/nightgrey)! - Internal changes:
+
+  - Update package.json's to be consistent
+  - Add keywords
+
+- Updated dependencies [[`6a4c9ec`](https://github.com/nightgrey/eslint-config/commit/6a4c9ec10ea84a6cb54132789fbb25fe17500631)]:
+  - @nightgrey/eslint-config-utils@1.0.0-alpha.1
+
 ## 1.0.0-alpha.0
 
 ### Major Changes
