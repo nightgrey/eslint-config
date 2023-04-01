@@ -1,12 +1,12 @@
 {
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "exports": "./index.js",
   "devDependencies": {
-    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.1",
+    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.2",
     "eslint-plugin-import": "^2.27.5"
   },
   "peerDependencies": {
-    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.1",
+    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.2",
     "eslint-plugin-import": "^2.27.5"
   },
   "name": "@nightgrey/eslint-config-base-import",

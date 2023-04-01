@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "exports": {
     ".": "./index.js",
     "./node": "./node.js",
@@ -7,17 +7,17 @@
   },
   "peerDependencies": {
     "eslint": "^8.34.0",
-    "@nightgrey/eslint-config-base": "^1.0.0-alpha.1",
-    "@nightgrey/eslint-config-base-typescript": "^1.0.0-alpha.1",
-    "@nightgrey/eslint-config-base-import": "^1.0.0-alpha.1",
-    "@nightgrey/eslint-config-base-unicorn": "^1.0.0-alpha.1"
+    "@nightgrey/eslint-config-base": "^1.0.0-alpha.2",
+    "@nightgrey/eslint-config-base-typescript": "^1.0.0-alpha.2",
+    "@nightgrey/eslint-config-base-import": "^1.0.0-alpha.2",
+    "@nightgrey/eslint-config-base-unicorn": "^1.0.0-alpha.2"
   },
   "devDependencies": {
     "eslint": "^8.34.0",
-    "@nightgrey/eslint-config-base": "^1.0.0-alpha.1",
-    "@nightgrey/eslint-config-base-typescript": "^1.0.0-alpha.1",
-    "@nightgrey/eslint-config-base-import": "^1.0.0-alpha.1",
-    "@nightgrey/eslint-config-base-unicorn": "^1.0.0-alpha.1"
+    "@nightgrey/eslint-config-base": "^1.0.0-alpha.2",
+    "@nightgrey/eslint-config-base-typescript": "^1.0.0-alpha.2",
+    "@nightgrey/eslint-config-base-import": "^1.0.0-alpha.2",
+    "@nightgrey/eslint-config-base-unicorn": "^1.0.0-alpha.2"
   },
   "dependencies": {},
   "name": "@nightgrey/eslint-config",

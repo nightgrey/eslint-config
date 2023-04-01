@@ -1,13 +1,13 @@
 {
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "exports": "./index.js",
   "devDependencies": {
-    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.1",
+    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.2",
     "eslint-plugin-testing-library": "^5.10.0",
     "globals": "^13.20.0"
   },
   "peerDependencies": {
-    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.1",
+    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.2",
     "@testing-library/react": "^13.4.0",
     "eslint-plugin-testing-library": "^5.10.0",
     "globals": "^13.20.0"
