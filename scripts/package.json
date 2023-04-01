@@ -1,6 +1,7 @@
 {
   "private": true,
   "type": "module",
+  "version": "0.0.0",
   "devDependencies": {
     "@types/micromatch": "^4.0.2",
     "get-root-path": "^2.0.2",

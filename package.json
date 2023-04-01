@@ -19,7 +19,7 @@
     "packages/overrides/*"
   ],
   "devDependencies": {
-    "@nightgrey/eslint-config": "*",
+    "@nightgrey/eslint-config": "1.0.0-alpha.0",
     "@tsconfig/node18-strictest-esm": "^1.0.1",
     "@types/eslint": "^8.37.0",
     "globals": "^13.20.0"
