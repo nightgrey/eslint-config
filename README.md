@@ -12,9 +12,9 @@
 
 # @nightgrey/eslint-config [ALPHA]
 
-**This configuration is still in alpha and currently being tested.**
+**All packages are in alpha and currently being tested and worked upon and are not stable.**
 
-This package provides grey's ESLint configuration. It provides opinionated defaults for TypeScript projects with a few different (optional) flavours.
+This repository provides a modular ESLint configuration. It provides opinionated defaults for TypeScript projects with a few different (optional) flavours.
 
 If you want to use this configuration or even just parts of it as a base for your own configuration, the configuration is modular, and you can install just parts of it to construct your own configuration, too.
 
@@ -181,14 +181,14 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/nightgrey/eslint-config-grey.svg?style=for-the-badge
-[contributors-url]: https://github.com/nightgrey/eslint-config-grey/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/nightgrey/eslint-config-grey.svg?style=for-the-badge
-[forks-url]: https://github.com/nightgrey/eslint-config-grey/network/members
-[stars-shield]: https://img.shields.io/github/stars/nightgrey/eslint-config-grey.svg?style=for-the-badge
-[stars-url]: https://github.com/nightgrey/eslint-config-grey/stargazers
-[issues-shield]: https://img.shields.io/github/issues/nightgrey/eslint-config-grey.svg?style=for-the-badge
-[issues-url]: https://github.com/nightgrey/eslint-config-grey/issues
-[license-shield]: https://img.shields.io/github/license/nightgrey/eslint-config-grey.svg?style=for-the-badge
-[license-url]: https://github.com/nightgrey/eslint-config-grey/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/nightgrey/eslint-config.svg?style=for-the-badge
+[contributors-url]: https://github.com/nightgrey/eslint-config/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/nightgrey/eslint-config.svg?style=for-the-badge
+[forks-url]: https://github.com/nightgrey/eslint-config/network/members
+[stars-shield]: https://img.shields.io/github/stars/nightgrey/eslint-config.svg?style=for-the-badge
+[stars-url]: https://github.com/nightgrey/eslint-config/stargazers
+[issues-shield]: https://img.shields.io/github/issues/nightgrey/eslint-config.svg?style=for-the-badge
+[issues-url]: https://github.com/nightgrey/eslint-config/issues
+[license-shield]: https://img.shields.io/github/license/nightgrey/eslint-config.svg?style=for-the-badge
+[license-url]: https://github.com/nightgrey/eslint-config/blob/master/LICENSE.txt
 [product-screenshot]: images/screenshot.png
