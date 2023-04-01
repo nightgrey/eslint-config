@@ -1,14 +1,14 @@
 {
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "exports": "./index.js",
   "devDependencies": {
-    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.1",
+    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.2",
     "eslint-config-airbnb-base": "^15.0.0",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
     "@eslint/js": "^8.37.0"
   },
   "peerDependencies": {
-    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.1",
+    "@nightgrey/eslint-config-utils": "^1.0.0-alpha.2",
     "eslint-config-airbnb-base": "^15.0.0",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
     "@eslint/js": "^8.37.0"
