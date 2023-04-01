@@ -28,45 +28,45 @@ export const typescriptBase = {
     },
   },
   rules: {
-  ...typescriptEslintPluginRules,
-  ...airbnbTypescriptRules,
+    ...typescriptEslintPluginRules,
+    ...airbnbTypescriptRules,
 
-  // Disable `no-underscore-dangle`. Use `@typescript-eslint/naming-convention` instead.
-  // https://eslint.org/docs/latest/rules/no-underscore-dangle
-  'no-underscore-dangle': ['off'],
+    // Disable `no-underscore-dangle`. Use `@typescript-eslint/naming-convention` instead.
+    // https://eslint.org/docs/latest/rules/no-underscore-dangle
+    'no-underscore-dangle': ['off'],
 
-  // Disables unsafe member access and assignment because it seems to catch
-  // more false positives than positives. Not sure why yet.
-  // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-assignment.md
-  // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-member-access.md
-  '@typescript-eslint/no-unsafe-assignment': ['off'],
-  '@typescript-eslint/no-unsafe-member-access': ['off'],
+    // Disables unsafe member access and assignment because it seems to catch
+    // more false positives than positives. Not sure why yet.
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-assignment.md
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-member-access.md
+    '@typescript-eslint/no-unsafe-assignment': ['off'],
+    '@typescript-eslint/no-unsafe-member-access': ['off'],
 
-  // // Define naming conventions for variables, functions, etc.
-  // // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/naming-convention.md
-  // '@typescript-eslint/naming-convention': [
-  //   'error',
-  //   {
-  //     selector: 'objectLiteralProperty',
-  //     format: undefined,
-  //   },
-  //   {
-  //     selector: 'default',
-  //     format: ['camelCase', 'PascalCase'],
-  //     leadingUnderscore: 'allowSingleOrDouble',
-  //     trailingUnderscore: 'allow',
-  //   },
-  //   {
-  //     selector: 'variable',
-  //     format: ['PascalCase', 'camelCase', 'UPPER_CASE'],
-  //     leadingUnderscore: 'allowSingleOrDouble',
-  //     trailingUnderscore: 'allow',
-  //   },
-  //   {
-  //     selector: 'typeLike',
-  //     format: ['PascalCase'],
-  //   },
-  // ],
+    // // Define naming conventions for variables, functions, etc.
+    // // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/naming-convention.md
+    // '@typescript-eslint/naming-convention': [
+    //   'error',
+    //   {
+    //     selector: 'objectLiteralProperty',
+    //     format: undefined,
+    //   },
+    //   {
+    //     selector: 'default',
+    //     format: ['camelCase', 'PascalCase'],
+    //     leadingUnderscore: 'allowSingleOrDouble',
+    //     trailingUnderscore: 'allow',
+    //   },
+    //   {
+    //     selector: 'variable',
+    //     format: ['PascalCase', 'camelCase', 'UPPER_CASE'],
+    //     leadingUnderscore: 'allowSingleOrDouble',
+    //     trailingUnderscore: 'allow',
+    //   },
+    //   {
+    //     selector: 'typeLike',
+    //     format: ['PascalCase'],
+    //   },
+    // ],
   },
   plugins: {
     '@typescript-eslint': typescriptEslintPlugin,

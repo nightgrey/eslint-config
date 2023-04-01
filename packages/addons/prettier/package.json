@@ -1,19 +1,31 @@
 {
-  "name": "@nightgrey/eslint-config-addon-prettier",
-  "repository": {
-    "url": "https://github.com/nightgrey/eslint-config",
-    "directory": "packages/addons/prettier",
-    "type": "git"
-  },
   "version": "1.0.0-alpha.0",
   "type": "module",
   "exports": "./index.js",
-  "packageManager": "npm@9.4.0",
   "devDependencies": {
     "eslint-config-prettier": "^8.6.0"
   },
   "peerDependencies": {
     "eslint-config-prettier": "^8.6.0",
     "prettier": "^2.8.3"
+  },
+  "name": "@nightgrey/eslint-config-addon-prettier",
+  "engines": {
+    "npm": ">= 9",
+    "node": ">= 18"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslint-config-nightgrey",
+    "eslint-config-nightgrey-addon",
+    "prettier",
+    "typescript"
+  ],
+  "repository": {
+    "url": "https://github.com/nightgrey/eslint-config",
+    "directory": "packages/addons/prettier",
+    "type": "git"
   }
 }

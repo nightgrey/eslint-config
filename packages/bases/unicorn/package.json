@@ -1,18 +1,29 @@
 {
-  "name": "@nightgrey/eslint-config-base-unicorn",
-  "repository": {
-    "url": "https://github.com/nightgrey/eslint-config",
-    "directory": "packages/bases/unicorn",
-    "type": "git"
-  },
   "version": "1.0.0-alpha.0",
   "type": "module",
   "exports": "./index.js",
-  "packageManager": "npm@9.4.0",
   "devDependencies": {
     "eslint-plugin-unicorn": "^46.0.0"
   },
   "peerDependencies": {
     "eslint-plugin-unicorn": "^45.0.2"
+  },
+  "name": "@nightgrey/eslint-config-base-unicorn",
+  "engines": {
+    "npm": ">= 9",
+    "node": ">= 18"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslint-config-nightgrey",
+    "eslint-config-nightgrey-base",
+    "typescript"
+  ],
+  "repository": {
+    "url": "https://github.com/nightgrey/eslint-config",
+    "directory": "packages/bases/unicorn",
+    "type": "git"
   }
 }

@@ -1,14 +1,7 @@
 {
-  "name": "@nightgrey/eslint-config-addon-jsdoc",
-  "repository": {
-    "url": "https://github.com/nightgrey/eslint-config",
-    "directory": "packages/addons/jsdoc",
-    "type": "git"
-  },
   "version": "1.0.0-alpha.0",
   "type": "module",
   "exports": "./index.js",
-  "packageManager": "npm@9.4.0",
   "devDependencies": {
     "@nightgrey/eslint-config-utils": "^1.0.0-alpha.0",
     "eslint-plugin-jsdoc": "^40.0.0"
@@ -16,5 +9,24 @@
   "peerDependencies": {
     "@nightgrey/eslint-config-utils": "^1.0.0-alpha.0",
     "eslint-plugin-jsdoc": "^40.0.0"
+  },
+  "name": "@nightgrey/eslint-config-addon-jsdoc",
+  "engines": {
+    "npm": ">= 9",
+    "node": ">= 18"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslint-config-nightgrey",
+    "eslint-config-nightgrey-addon",
+    "jsdoc",
+    "typescript"
+  ],
+  "repository": {
+    "url": "https://github.com/nightgrey/eslint-config",
+    "directory": "packages/addons/jsdoc",
+    "type": "git"
   }
 }

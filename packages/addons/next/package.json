@@ -1,19 +1,31 @@
 {
-  "name": "@nightgrey/eslint-config-addon-next",
-  "repository": {
-    "url": "https://github.com/nightgrey/eslint-config",
-    "directory": "packages/addons/next",
-    "type": "git"
-  },
   "version": "1.0.0-alpha.0",
   "type": "module",
   "exports": "./index.js",
-  "packageManager": "npm@9.4.0",
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.1.6"
   },
   "peerDependencies": {
     "@next/eslint-plugin-next": "^13.1.6",
     "next": "^13.1.6"
+  },
+  "name": "@nightgrey/eslint-config-addon-next",
+  "engines": {
+    "npm": ">= 9",
+    "node": ">= 18"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslint-config-nightgrey",
+    "eslint-config-nightgrey-addon",
+    "next",
+    "typescript"
+  ],
+  "repository": {
+    "url": "https://github.com/nightgrey/eslint-config",
+    "directory": "packages/addons/next",
+    "type": "git"
   }
 }

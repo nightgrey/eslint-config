@@ -1,21 +1,14 @@
 {
-  "name": "@nightgrey/eslint-config",
-  "repository": {
-    "url": "https://github.com/nightgrey/eslint-config",
-    "type": "git"
-  },
   "private": true,
   "type": "module",
   "scripts": {
     "test": "npm run test:lint",
     "test:lint": "eslint packages",
+    "test:lint:fix": "npm run prettier && eslint --fix packages",
+    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "release": "changeset publish",
     "changeset": "changeset",
-    "pkgJsons": "tsx scripts/maintain.ts"
-  },
-  "engines": {
-    "npm": ">= 9",
-    "node": ">= 18"
+    "maintain": "tsx scripts/maintain.ts && npm run test:lint:fix"
   },
   "workspaces": [
     "scripts",
@@ -25,7 +18,6 @@
     "packages/bases/*",
     "packages/overrides/*"
   ],
-  "packageManager": "npm@9.4.0",
   "devDependencies": {
     "@nightgrey/eslint-config": "*",
     "@tsconfig/node18-strictest-esm": "^1.0.1",
@@ -35,5 +27,22 @@
   "dependencies": {
     "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.26.1"
+  },
+  "name": "@nightgrey/eslint-config",
+  "engines": {
+    "npm": ">= 9",
+    "node": ">= 18"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslint-config-nightgrey",
+    "typescript"
+  ],
+  "repository": {
+    "url": "https://github.com/nightgrey/eslint-config",
+    "directory": ".",
+    "type": "git"
   }
 }

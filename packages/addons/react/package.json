@@ -1,14 +1,7 @@
 {
-  "name": "@nightgrey/eslint-config-addon-react",
-  "repository": {
-    "url": "https://github.com/nightgrey/eslint-config",
-    "directory": "packages/addons/react",
-    "type": "git"
-  },
   "version": "1.0.0-alpha.0",
   "type": "module",
   "exports": "./index.js",
-  "packageManager": "npm@9.4.0",
   "devDependencies": {
     "@nightgrey/eslint-config-utils": "^1.0.0-alpha.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
@@ -24,5 +17,24 @@
     "globals": "^13.20.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "name": "@nightgrey/eslint-config-addon-react",
+  "engines": {
+    "npm": ">= 9",
+    "node": ">= 18"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslint-config-nightgrey",
+    "eslint-config-nightgrey-addon",
+    "react",
+    "typescript"
+  ],
+  "repository": {
+    "url": "https://github.com/nightgrey/eslint-config",
+    "directory": "packages/addons/react",
+    "type": "git"
   }
 }

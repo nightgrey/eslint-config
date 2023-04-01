@@ -12,5 +12,5 @@ export const indexFilesOverrides = {
     // similar.
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-default-export.md
     'import/no-default-export': 'warn',
-  }
+  },
 };

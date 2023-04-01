@@ -1,14 +1,7 @@
 {
-  "name": "@nightgrey/eslint-config-base-typescript",
-  "repository": {
-    "url": "https://github.com/nightgrey/eslint-config",
-    "directory": "packages/bases/typescript",
-    "type": "git"
-  },
   "version": "1.0.0-alpha.0",
   "type": "module",
   "exports": "./index.js",
-  "packageManager": "npm@9.4.0",
   "devDependencies": {
     "@nightgrey/eslint-config-utils": "^1.0.0-alpha.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
@@ -22,5 +15,23 @@
     "globals": "^13.20.0",
     "typescript": "^5.0.3",
     "vitest": "^0.29.7"
+  },
+  "name": "@nightgrey/eslint-config-base-typescript",
+  "engines": {
+    "npm": ">= 9",
+    "node": ">= 18"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslint-config-nightgrey",
+    "eslint-config-nightgrey-base",
+    "typescript"
+  ],
+  "repository": {
+    "url": "https://github.com/nightgrey/eslint-config",
+    "directory": "packages/bases/typescript",
+    "type": "git"
   }
 }

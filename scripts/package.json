@@ -1,12 +1,6 @@
 {
-  "name": "@nightgrey/scripts",
   "private": true,
   "type": "module",
-  "engines": {
-    "npm": ">= 9",
-    "node": ">= 18"
-  },
-  "packageManager": "npm@9.4.0",
   "devDependencies": {
     "@types/micromatch": "^4.0.2",
     "get-root-path": "^2.0.2",
@@ -15,5 +9,22 @@
     "micromatch": "^4.0.5",
     "tsx": "^3.12.6",
     "type-fest": "^3.7.2"
+  },
+  "name": "@nightgrey/eslint-config-scripts",
+  "engines": {
+    "npm": ">= 9",
+    "node": ">= 18"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslint-config-nightgrey",
+    "typescript"
+  ],
+  "repository": {
+    "url": "https://github.com/nightgrey/eslint-config",
+    "directory": "scripts",
+    "type": "git"
   }
 }

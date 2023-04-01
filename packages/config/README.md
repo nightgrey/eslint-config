@@ -115,7 +115,6 @@ import { indexFilesOverrides } from '@nightgrey/eslint-config-override-index-fil
 import { testingLibraryReactAddon } from '@nightgrey/eslint-config-addon-testing-library-react';
 import globals from 'globals';
 
-
 /** @type {import('eslint').Linter.FlatConfig} */
 const configuration = {
   // Your own configuration goes here.

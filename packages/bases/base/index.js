@@ -83,4 +83,3 @@ export const base = {
     '@typescript-eslint': typescriptEslintPlugin,
   },
 };
-

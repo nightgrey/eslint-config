@@ -1,18 +1,29 @@
 {
-  "name": "@nightgrey/eslint-config-override-index-files",
-  "repository": {
-    "url": "https://github.com/nightgrey/eslint-config",
-    "directory": "packages/overrides/index-files",
-    "type": "git"
-  },
   "version": "1.0.0-alpha.0",
   "type": "module",
   "exports": "./index.js",
-  "packageManager": "npm@9.4.0",
   "devDependencies": {
     "@nightgrey/eslint-config-utils": "^1.0.0-alpha.0"
   },
   "peerDependencies": {
     "@nightgrey/eslint-config-utils": "^1.0.0-alpha.0"
+  },
+  "name": "@nightgrey/eslint-config-override-index-files",
+  "engines": {
+    "npm": ">= 9",
+    "node": ">= 18"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslint-config-nightgrey",
+    "eslint-config-nightgrey-override",
+    "typescript"
+  ],
+  "repository": {
+    "url": "https://github.com/nightgrey/eslint-config",
+    "directory": "packages/overrides/index-files",
+    "type": "git"
   }
 }

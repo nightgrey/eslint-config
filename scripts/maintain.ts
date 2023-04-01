@@ -4,8 +4,8 @@ import { join } from 'path';
 import path from 'node:path';
 import type { PackageJson } from 'type-fest';
 import { merge } from 'merge-anything';
-import rootPath from 'get-root-path';
-import fs from 'node:fs/promises'
+import { rootPath } from 'get-root-path';
+import fs from 'node:fs/promises';
 
 // TODO: Hastily written code. Needs some clean-up.
 // TODO: Add README.md generation?
@@ -13,15 +13,16 @@ import fs from 'node:fs/promises'
 type PathInfo = {
   suffix: string | null;
   group: string | null;
-}
+};
 
 const getPathInfo = (_path: string): PathInfo => {
   // `jest`, `unicorn`, `import`, etc.
-  const suffix = path.basename(path.dirname(_path))
+  const suffix = path.basename(path.dirname(_path));
   // addons, overrides, etc.
   const group = path.basename(path.dirname(path.dirname(_path)));
 
-  const validate = (value: string) => ((value === `.` || value === 'packages') ? null : value);
+  const validate = (value: string) =>
+    value === `.` || value === 'packages' ? null : value;
 
   const validateInfo = (value: PathInfo) => {
     if (value.suffix === 'config' && value.group === null) {
@@ -32,9 +33,8 @@ const getPathInfo = (_path: string): PathInfo => {
       return { suffix: 'base', group: null };
     }
 
-
     return value;
-  }
+  };
 
   const translate = (value: string | null) => {
     switch (value) {
@@ -47,28 +47,35 @@ const getPathInfo = (_path: string): PathInfo => {
       default:
         return value;
     }
-  }
+  };
 
-  return validateInfo({ suffix: translate(validate(suffix)), group: translate(validate(group)) });
-}
+  return validateInfo({
+    suffix: translate(validate(suffix)),
+    group: translate(validate(group)),
+  });
+};
 const constructName = (_path: string) => {
   const { suffix, group } = getPathInfo(_path);
 
-  const name = ['@nightgrey/eslint-config', group, suffix].filter(Boolean).join('-');
+  const name = ['@nightgrey/eslint-config', group, suffix]
+    .filter(Boolean)
+    .join('-');
   return name;
-}
+};
 
 const update = (previous: PackageJson, _path: string) => {
   const info = getPathInfo(_path);
-  const name = constructName(_path)
+  const name = constructName(_path);
 
+  const directory = path.dirname(_path);
   if (previous.name !== name) {
-    console.warn(`Name mismatch. It was changed. \nActual: ${previous.name}. Constructed: ${name}`);
+    console.warn(
+      `Name mismatch. It was changed. \nActual: ${previous.name}. Constructed: ${name}`
+    );
   }
 
   const COMMON = {
     name,
-    packageManager: 'npm@9.4.0',
     engines: { npm: '>= 9', node: '>= 18' },
     keywords: [
       'eslint',
@@ -81,12 +88,16 @@ const update = (previous: PackageJson, _path: string) => {
     ].filter(Boolean),
     repository: {
       url: 'https://github.com/nightgrey/eslint-config',
-      directory: 'packages/config',
+      directory,
       type: 'git',
     },
   };
 
-  return merge(previous, COMMON);
+  const result = merge(previous, COMMON);
+
+  if ('packageManager' in result) delete result.packageManager;
+
+  return result;
 };
 
 export const getWorkspaces = (): string[] => {
@@ -114,9 +125,10 @@ export const getPackageJsons = async () => {
 
   return Object.fromEntries(
     paths.map((path) => {
-      const packageJsonPath = join(process.cwd(), path);
-      const packageJsonContent = readFileSync(packageJsonPath, 'utf-8');
-      return [path, JSON.parse(packageJsonContent) as PackageJson];
+      return [
+        path,
+        JSON.parse(readFileSync(join(rootPath, path), 'utf-8')) as PackageJson,
+      ];
     })
   );
 };
@@ -124,17 +136,21 @@ export const getPackageJsons = async () => {
 export const updatePackageJsons = async () => {
   const packageJsons = await getPackageJsons();
 
-
   const entries = Object.entries(packageJsons);
 
-  await Promise.all(entries.map(async ([_path, packageJson]) => {
-    const updated = update(packageJson, _path);
+  await Promise.all(
+    entries.map(async ([_path, packageJson]) => {
+      const updated = update(packageJson, _path);
 
-    await fs.writeFile(join(rootPath, _path), JSON.stringify(updated, null, 2), 'utf-8');
+      await fs.writeFile(
+        join(rootPath, _path),
+        JSON.stringify(updated, null, 2),
+        'utf-8'
+      );
 
-    console.log(`Updated "${_path}"`);
-  }));
+      console.log(`Updated ${_path}`);
+    })
+  );
 };
-
 
 updatePackageJsons();

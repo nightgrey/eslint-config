@@ -1,14 +1,25 @@
 {
+  "version": "1.0.0-alpha.0",
+  "type": "module",
+  "exports": "./index.js",
+  "devDependencies": {},
+  "peerDependencies": {},
   "name": "@nightgrey/eslint-config-override-development-files",
+  "engines": {
+    "npm": ">= 9",
+    "node": ">= 18"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslint-config-nightgrey",
+    "eslint-config-nightgrey-override",
+    "typescript"
+  ],
   "repository": {
     "url": "https://github.com/nightgrey/eslint-config",
     "directory": "packages/overrides/development-files",
     "type": "git"
-  },
-  "version": "1.0.0-alpha.0",
-  "type": "module",
-  "exports": "./index.js",
-  "packageManager": "npm@9.4.0",
-  "devDependencies": {},
-  "peerDependencies": {}
+  }
 }

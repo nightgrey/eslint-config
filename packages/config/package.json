@@ -1,17 +1,4 @@
 {
-  "name": "@nightgrey/eslint-config",
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "eslint-config",
-    "eslint-config-nightgrey",
-    "typescript"
-  ],
-  "repository": {
-    "url": "https://github.com/nightgrey/eslint-config",
-    "directory": "packages/config",
-    "type": "git"
-  },
   "version": "1.0.0-alpha.0",
   "type": "module",
   "exports": {
@@ -19,7 +6,6 @@
     "./node": "./node.js",
     "./browser.js": "./browser.js"
   },
-  "packageManager": "npm@9.4.0",
   "peerDependencies": {
     "eslint": "^8.34.0",
     "@nightgrey/eslint-config-base": "^1.0.0-alpha.0",
@@ -34,5 +20,22 @@
     "@nightgrey/eslint-config-base-import": "^1.0.0-alpha.0",
     "@nightgrey/eslint-config-base-unicorn": "^1.0.0-alpha.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "name": "@nightgrey/eslint-config",
+  "engines": {
+    "npm": ">= 9",
+    "node": ">= 18"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslint-config-nightgrey",
+    "typescript"
+  ],
+  "repository": {
+    "url": "https://github.com/nightgrey/eslint-config",
+    "directory": "packages/config",
+    "type": "git"
+  }
 }

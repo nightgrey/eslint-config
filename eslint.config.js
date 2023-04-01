@@ -42,7 +42,7 @@ const config = [
   },
   prettierAddon,
   indexFilesOverrides,
-  developmentFilesOverrides
+  developmentFilesOverrides,
 ];
 
 export default config;

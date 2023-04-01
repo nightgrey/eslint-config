@@ -1,14 +1,7 @@
 {
-  "name": "@nightgrey/eslint-config-addon-testing-library-react",
-  "repository": {
-    "url": "https://github.com/nightgrey/eslint-config",
-    "directory": "packages/addons/testing-library-react",
-    "type": "git"
-  },
   "version": "1.0.0-alpha.0",
   "type": "module",
   "exports": "./index.js",
-  "packageManager": "npm@9.4.0",
   "devDependencies": {
     "@nightgrey/eslint-config-utils": "^1.0.0-alpha.0",
     "eslint-plugin-testing-library": "^5.10.0",
@@ -19,5 +12,24 @@
     "@testing-library/react": "^13.4.0",
     "eslint-plugin-testing-library": "^5.10.0",
     "globals": "^13.20.0"
+  },
+  "name": "@nightgrey/eslint-config-addon-testing-library-react",
+  "engines": {
+    "npm": ">= 9",
+    "node": ">= 18"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslint-config-nightgrey",
+    "eslint-config-nightgrey-addon",
+    "testing-library-react",
+    "typescript"
+  ],
+  "repository": {
+    "url": "https://github.com/nightgrey/eslint-config",
+    "directory": "packages/addons/testing-library-react",
+    "type": "git"
   }
 }
