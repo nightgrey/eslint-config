@@ -4,7 +4,7 @@ const { JSX_AND_TSX } = require('@nightgrey/eslint-config-utils');
 
 // Compatibility layer until https://github.com/jest-community/eslint-plugin-jest/pull/1245
 const vitestRules = {
-  rules: vitest.configs.recommended.rules,
+  ...vitest.configs.recommended.rules,
 };
 
 module.exports.dependencies = ['vitest'];
