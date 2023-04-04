@@ -1,5 +1,11 @@
 # @nightgrey/eslint-config
 
+## 1.0.0-alpha.3
+
+### Patch Changes
+
+- [`a3e3bcc`](https://github.com/nightgrey/eslint-config/commit/a3e3bcc429a6eab52dd984119559129a09f702f4) Thanks [@nightgrey](https://github.com/nightgrey)! - This update fixes a version snafoo I did.
+
 ## 1.0.0-alpha.2
 
 ### Patch Changes
