@@ -1,25 +1,22 @@
 {
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.1",
   "exports": {
     ".": "./index.js",
     "./node": "./node.js",
     "./browser.js": "./browser.js"
   },
   "peerDependencies": {
-    "eslint": "^8.34.0",
-    "@nightgrey/eslint-config-base": "^1.0.0-alpha.2",
-    "@nightgrey/eslint-config-base-typescript": "^1.0.0-alpha.2",
-    "@nightgrey/eslint-config-base-import": "^1.0.0-alpha.2",
-    "@nightgrey/eslint-config-base-unicorn": "^1.0.0-alpha.2"
+    "eslint": "^8.34.0"
   },
   "devDependencies": {
-    "eslint": "^8.34.0",
+    "eslint": "^8.34.0"
+  },
+  "dependencies": {
     "@nightgrey/eslint-config-base": "^1.0.0-alpha.2",
     "@nightgrey/eslint-config-base-typescript": "^1.0.0-alpha.2",
     "@nightgrey/eslint-config-base-import": "^1.0.0-alpha.2",
     "@nightgrey/eslint-config-base-unicorn": "^1.0.0-alpha.2"
   },
-  "dependencies": {},
   "name": "@nightgrey/eslint-config",
   "type": "commonjs",
   "engines": {
