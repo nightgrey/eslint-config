@@ -1,5 +1,11 @@
 # @nightgrey/eslint-config-base-import
 
+## 1.0.0-alpha.3
+
+### Patch Changes
+
+- [`40cd5c2`](https://github.com/nightgrey/eslint-config/commit/40cd5c27c51bd16260487aac6c6225de384bf6fa) Thanks [@nightgrey](https://github.com/nightgrey)! - Fixed: Move @nightgrey packages to `dependencies`.
+
 ## 1.0.0-alpha.2
 
 ### Patch Changes
