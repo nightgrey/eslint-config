@@ -4,7 +4,7 @@ const globals = require('globals');
 
 // Compatibility layer until https://github.com/jest-community/eslint-plugin-jest/pull/1245
 const testingLibraryRules = {
-  rules: testingLibrary.configs.react.rules,
+  ...testingLibrary.configs.react.rules,
 };
 
 module.exports.dependencies = [
