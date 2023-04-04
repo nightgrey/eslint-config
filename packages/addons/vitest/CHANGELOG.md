@@ -1,5 +1,11 @@
 # @nightgrey/eslint-config-addon-vitest
 
+## 1.0.0-alpha.3
+
+### Patch Changes
+
+- [`13eb83e`](https://github.com/nightgrey/eslint-config/commit/13eb83ef6111bc4c6dc764340d1bf9528918c44a) Thanks [@nightgrey](https://github.com/nightgrey)! - Fixed: Rule import
+
 ## 1.0.0-alpha.2
 
 ### Patch Changes
