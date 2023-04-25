@@ -1,5 +1,11 @@
 # @nightgrey/eslint-config-addon-testing-library-react
 
+## 1.0.0-alpha.3
+
+### Patch Changes
+
+- [`6682b93`](https://github.com/nightgrey/eslint-config/commit/6682b933a51197b1a26092df385e36440c314f75) Thanks [@nightgrey](https://github.com/nightgrey)! - Fixed: Rule import.
+
 ## 1.0.0-alpha.2
 
 ### Patch Changes
